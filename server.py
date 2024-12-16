@@ -6,7 +6,7 @@ from cryptography.fernet import Fernet
 import json
 import os
 
-# generer la cle
+# Charger ou générer une clé
 def load_key(file_path="key.key"):
     if os.path.exists(file_path):
         with open(file_path, "rb") as key_file:
@@ -36,7 +36,7 @@ def start_server():
     server_socket.listen(1)
 
     print("Serveur en attente de connexion...")
-    conversation = []
+    conversation = []  # Stocker les messages
 
     conn, addr = server_socket.accept()
     print(f"Connexion établie avec {addr}")
@@ -53,6 +53,7 @@ def start_server():
 
         print(f"Client: {decrypted_message}")
 
+        # Envoyer une réponse
         response = transform_audio_into_text()
         encrypted_response = cipher.encrypt(response.encode()).decode()
         conn.send(encrypted_response.encode())

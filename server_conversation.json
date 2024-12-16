@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "from": "client",
+        "message": "gAAAAABnYC1C4zaaIPfOYkdkKI1eg7tX2gFTyDoiSpGf8IPrIqyvF8X8JbMdIOTEvs6Pbezm4_skzJL4u3B1QIBXepzoiSylJA=="
+    },
+    {
+        "from": "server",
+        "message": "gAAAAABnYC1He_zHan1jyJwsWOmrqrnKkZ863SBb_ycF5s6F1Eny0RQ9UF6lq9uLV_QTgLf7SbJxax7sTVHWFeZdl35ugTd5Rw=="
+    }
+]

@@ -1,15 +1,13 @@
 # rbac_utils.py
 ROLES_PERMISSIONS = {
-    "admin": ["decrypt"],  
-    "user": []  
+    "admin": ["decrypt", "view_history"],
+    "user": ["view_history"],
+    "guest": []
 }
 
 # Rôle de l'utilisateur actuel
-current_user_role = "user"  
+current_user_role = "admin"  
 
 def has_permission(action):
-    """
-    Vérifie si l'utilisateur actuel a la permission d'effectuer une action donnée.
-    """
     permissions = ROLES_PERMISSIONS.get(current_user_role, [])
     return action in permissions

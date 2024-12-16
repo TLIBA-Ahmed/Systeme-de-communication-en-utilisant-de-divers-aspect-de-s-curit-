@@ -1,0 +1,2 @@
+admin / admin123 pour accéder aux permissions complètes.
+user / user123 pour des permissions limitées.
