@@ -1,0 +1,23 @@
+{
+    "id": "/providers/Microsoft.Authorization/roleDefinitions/a7264617-510b-434b-a828-9731dc254ea7",
+    "properties": {
+        "roleName": "Collaborateur à privilèges élevés de partage SMB des données du fichier de stockage",
+        "description": "Permet de lire, écrire, supprimer et modifier l'accès à l'autorisation NTFS dans les partages de fichiers Stockage Azure via SMB",
+        "assignableScopes": [
+            "/"
+        ],
+        "permissions": [
+            {
+                "actions": [],
+                "notActions": [],
+                "dataActions": [
+                    "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read",
+                    "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/write",
+                    "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/delete",
+                    "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/modifypermissions/action"
+                ],
+                "notDataActions": []
+            }
+        ]
+    }
+}
